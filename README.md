@@ -1,4 +1,4 @@
-# Reddit-Comments-Classification
+# Reddit-Comments-Text-Classification
 A set of different models to predict the category of subreddit comments and obtaining their accuracies using 5-fold cross validation.
 
 In this project, first we read the test and training data. Because we used Google Collaboratory framework for this project, we uploaded the test set and train set on Google drive and read the files from Google Drive. You can change the path given in the code with your files' path. Now we explain the functions breifly and after that we explain how to run the code.
