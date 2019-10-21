@@ -5,6 +5,9 @@ In this project, first we read the test and training data. Because we used Googl
 
 The data is a balanced dataset of subreddit comments categorized into 20 classes. The data is provided in CSVs, where the text content of the comment is enclosed in quotes. Each entry in the training CSV contains a comment ID, the text of the comment, and the name of the target subreddit for that comment. For the test CSV, each line contains a comment ID and the text for that comment.
 
+For this project, we have first tried to preprocess the text data of subreddit comments into 20 categories that we have in order to improve the feature extraction, using different strateges such as removing stop words, stemming and etc. We used some Python libraries such as NLTK for this purpose as well. Then using the Scikit-Learn library of Python \cite{skl}, we implemented Voting Classifier, Logistic regression, Multinomial Naive Bayes, Decision Tree, K-Nearest Neighbors, Random Forests and SVM. Then we evaluated the accuracy of these models using 5-fold cross validation. The highest accuracy here was obtained by Voting Classifier with around 58\% accuracy. The next best algorithm turned out to be Multinomial Naive Bayes by Scikit-learn library.
+
+
 In the Comment_Classification.ipynb we have a class "Models". 
 
 1 --- In this class we have preprocessing_data_xtrain and preprocessing_data_xtest functions that preprocess the comments in training set and comments in test set respectively. 
