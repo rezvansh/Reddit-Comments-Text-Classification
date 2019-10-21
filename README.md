@@ -3,8 +3,9 @@ A set of different models to predict the category of subreddit comments and obta
 
 In this project, first we read the test and training data. Because we used Google Collaboratory framework for this project, we uploaded the test set and train set on Google drive and read the files from Google Drive. You can change the path given in the code with your files' path. Now we explain the functions breifly and after that we explain how to run the code.
 
+The data is a balanced dataset of subreddit comments categorized into 20 classes. The data is provided in CSVs, where the text content of the comment is enclosed in quotes. Each entry in the training CSV contains a comment ID, the text of the comment, and the name of the target subreddit for that comment. For the test CSV, each line contains a comment ID and the text for that comment.
 
-Then we have a class "Models". 
+In the Comment_Classification.ipynb we have a class "Models". 
 
 1 --- In this class we have preprocessing_data_xtrain and preprocessing_data_xtest functions that preprocess the comments in training set and comments in test set respectively. 
 2 -- We have ensemble_method() that trains the voting classifier method and returns the labels that are results of prediction.
